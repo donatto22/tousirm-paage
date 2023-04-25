@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80px;
+    position:  fixed;
+    top: 0;
+    color: var(--firebase-gray);
+    text-transform: uppercase;
+}
+
+.left img {
+    width: 40%;
+}
+
+.right {
+    display: flex;
+}
+
+.right a {
+    display: block;
+    margin: .5em 1em;
+    padding: .5em 0;
+    color: var(--firebase-gray);
+}
+
+.right a:hover {
+    box-shadow: 0 1px;
+}
+
+.on-scroll {
+    color: var(--bootstrap-bg-dark);
+    background-color: var(--firebase-gray);
+    box-shadow: 0 1px 10px var(--shadow-clear);
+    transition: all .2s;
+}
+
+.on-scroll .right a {
+    color: var(--bootstrap-bg-dark);
+}
+
+.black-link {
+    color: var(--bootstrap-bg-dark) !important;
+}
+
+.link.active {
+    box-shadow: 0 1px;
+}
+
+.no-fixed {
+    position: relative;
+}
